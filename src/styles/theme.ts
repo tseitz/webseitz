@@ -1,25 +1,14 @@
 export interface ITheme {
   palette: {
-    darkPrimary: string
-    primary: string
-    midPrimary: string
-    lightPrimary: string
-    black: string
-    white: string
-  }
-  spacing: {
-    unit: number
+    greenPrimary: string
+    bluePrimary: string
   }
 }
 
 const mainTheme = {
   palette: {
-    darkPrimary: '#FF8515',
-    primary: '#FA9F4B',
-    white: '#FFFFFF',
-  },
-  spacing: {
-    unit: 8,
+    greenPrimary: '#0dbc79',
+    bluePrimary: '#2472c8',
   },
 }
 

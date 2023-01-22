@@ -3,7 +3,7 @@
 	import { ethers } from 'ethers';
 
 	import ConnectButton from './ConnectButton.svelte';
-	import { provider } from '$fc-stores/contract.store';
+	import { provider } from '$ws-stores/contract.store';
 
 	let pending = false;
 

@@ -10,10 +10,10 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			'$fc-root': './src',
-			'$fc-types': './src/types',
-			'$fc-stores': './src/stores',
-			'$fc-abis': './src/abis'
+			'$ws-root': './src',
+			'$ws-types': './src/types',
+			'$ws-stores': './src/stores',
+			'$ws-abis': './src/abis'
 		}
 	}
 };

@@ -15,6 +15,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^1.0.0",
 		"@sveltejs/kit": "^1.0.1",
+		"@types/three": "^0.149.0",
 		"@typescript-eslint/eslint-plugin": "^5.46.1",
 		"@typescript-eslint/parser": "^5.46.1",
 		"autoprefixer": "^10.4.13",
@@ -36,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"ethers": "^5.7.2",
-		"svelte-ethers-store": "^2.5.8"
+		"svelte-ethers-store": "^2.5.8",
+		"three": "^0.149.0"
 	}
 }

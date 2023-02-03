@@ -4,7 +4,7 @@
 	<nav class="mt-16">
 		<ul class="grid gap-6">
 			<a href="/"><li class="text-white text-2xl">Home</li></a>
-			<a href="/who-i-am"><li class="text-white text-2xl">Who I Am</li></a>
+			<a href="/who-i-am"><li class="text-white text-2xl">Who Am I</li></a>
 			<a href="/what-i-do"><li class="text-white text-2xl">What I Do</li></a>
 			<a href="/get-in-touch"><li class="text-white text-2xl">Get In Touch</li></a>
 			<a href="/things-i-use"><li class="text-white text-2xl">Things I Use</li></a>

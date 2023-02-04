@@ -6,7 +6,7 @@
 	import moonImage from '$lib/assets/moon.jpg';
 	import teganImage from '$lib/assets/profile-pic2.jpg';
 	import normalImage from '$lib/assets/normal.jpg';
-	import spaceImage from '$lib/assets/space.jpg';
+	import spaceImage from '$lib/assets/space.jpeg';
 
 	let canvasEl: HTMLElement;
 	let scene: Scene;

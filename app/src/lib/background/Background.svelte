@@ -1,19 +1,27 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
+	import type { WebGLRenderer, Scene, PerspectiveCamera, Mesh } from 'three';
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-	let canvasEl;
-	let scene;
-	let camera;
-	let renderer;
-	let torus;
-	let moon;
-	let tegan;
+	let canvasEl: HTMLElement;
+	let scene: Scene;
+	let camera: PerspectiveCamera;
+	let renderer: WebGLRenderer;
+	let torus: Mesh;
+	let moon: Mesh;
+	let tegan: Mesh;
+	let h: number;
+	let w: number;
+
+	$: if (w && h) {
+		camera = new THREE.PerspectiveCamera(85, w / h, 0.1, 1000);
+		renderer.setSize(w, h);
+	}
 
 	onMount(() => {
 		scene = new THREE.Scene();
-		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+		camera = new THREE.PerspectiveCamera(85, window.innerWidth / window.innerHeight, 0.1, 1000);
 		renderer = new THREE.WebGLRenderer({ canvas: canvasEl });
 
 		renderer.setPixelRatio(window.devicePixelRatio);
@@ -39,7 +47,7 @@
 
 		const controls = new OrbitControls(camera, renderer.domElement);
 
-		Array(200).fill().forEach(addStar);
+		Array(200).fill(0).forEach(addStar);
 
 		const spaceTexture = new THREE.TextureLoader().load('src/lib/images/space.jpeg');
 
@@ -81,7 +89,7 @@
 		const star = new THREE.Mesh(geometry, material);
 
 		const [x, y, z] = Array(3)
-			.fill()
+			.fill(0)
 			.map(() => THREE.MathUtils.randFloatSpread(100));
 
 		star.position.set(x, y, z);
@@ -102,5 +110,7 @@
 		camera.position.y = t * -0.0002;
 	}
 </script>
+
+<svelte:window bind:innerHeight={h} bind:innerWidth={w} />
 
 <canvas bind:this={canvasEl} id="bg" class="fixed top-0 left-0" />

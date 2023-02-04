@@ -5,6 +5,8 @@
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 	import moonImage from '$lib/assets/moon.jpg';
 
+	console.log(moonImage);
+
 	let canvasEl: HTMLElement;
 	let scene: Scene;
 	let camera: PerspectiveCamera;

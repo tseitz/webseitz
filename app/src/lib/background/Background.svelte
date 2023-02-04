@@ -3,6 +3,7 @@
 	import type { WebGLRenderer, Scene, PerspectiveCamera, Mesh } from 'three';
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+	import moonImage from '$lib/assets/moon.jpg';
 
 	let canvasEl: HTMLElement;
 	let scene: Scene;

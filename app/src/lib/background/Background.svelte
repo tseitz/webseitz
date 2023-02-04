@@ -4,8 +4,9 @@
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 	import moonImage from '$lib/assets/moon.jpg';
-
-	console.log(moonImage);
+	import teganImage from '$lib/assets/profile-pic2.jpg';
+	import normalImage from '$lib/assets/normal.jpg';
+	import spaceImage from '$lib/assets/space.jpg';
 
 	let canvasEl: HTMLElement;
 	let scene: Scene;
@@ -52,21 +53,21 @@
 
 		Array(200).fill(0).forEach(addStar);
 
-		const spaceTexture = new THREE.TextureLoader().load('src/lib/assets/space.jpeg');
+		const spaceTexture = new THREE.TextureLoader().load(spaceImage);
 
 		scene.background = spaceTexture;
 
 		animate();
 
-		const teganTexture = new THREE.TextureLoader().load('src/lib/assets/profile-pic2.jpg');
+		const teganTexture = new THREE.TextureLoader().load(teganImage);
 		tegan = new THREE.Mesh(
 			new THREE.BoxGeometry(3, 3, 3),
 			new THREE.MeshBasicMaterial({ map: teganTexture })
 		);
 		scene.add(tegan);
 
-		const moonTexture = new THREE.TextureLoader().load('src/lib/assets/moon.jpg');
-		const normalTexture = new THREE.TextureLoader().load('src/lib/assets/normal.jpg');
+		const moonTexture = new THREE.TextureLoader().load(moonImage);
+		const normalTexture = new THREE.TextureLoader().load(normalImage);
 		moon = new THREE.Mesh(
 			new THREE.SphereGeometry(3, 32, 32),
 			new THREE.MeshStandardMaterial({ map: moonTexture, normalMap: normalTexture })

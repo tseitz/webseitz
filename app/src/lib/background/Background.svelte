@@ -36,6 +36,8 @@
 		const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
 		torus = new THREE.Mesh(geometry, material);
 
+		torus.position.x = 10;
+		torus.position.z = 5;
 		scene.add(torus);
 
 		const pointLight = new THREE.PointLight(0xf3e7d3);
@@ -64,6 +66,7 @@
 			new THREE.BoxGeometry(3, 3, 3),
 			new THREE.MeshBasicMaterial({ map: teganTexture })
 		);
+		tegan.position.x = -6;
 		scene.add(tegan);
 
 		const moonTexture = new THREE.TextureLoader().load(moonImage);
@@ -72,8 +75,8 @@
 			new THREE.SphereGeometry(3, 32, 32),
 			new THREE.MeshStandardMaterial({ map: moonTexture, normalMap: normalTexture })
 		);
-		moon.position.z = 30;
-		moon.position.x = -10;
+		moon.position.z = 24;
+		moon.position.x = -8;
 		scene.add(moon);
 
 		document.body.onscroll = moveCamera;
@@ -109,9 +112,9 @@
 		tegan.rotation.y += 0.01;
 		tegan.rotation.z += 0.01;
 
-		camera.position.z = t * -0.01;
-		camera.position.x = t * -0.0002;
-		camera.position.y = t * -0.0002;
+		camera.position.z = t * -0.02;
+		camera.position.x = t * -0.0004;
+		camera.position.y = t * -0.0004;
 	}
 </script>
 

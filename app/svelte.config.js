@@ -14,6 +14,9 @@ const config = {
 			'$ws-types': './src/types',
 			'$ws-stores': './src/stores',
 			'$ws-abis': './src/abis'
+		},
+		files: {
+			assets: 'src/assets'
 		}
 	}
 };

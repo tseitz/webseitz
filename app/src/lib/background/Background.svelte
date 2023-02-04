@@ -49,21 +49,21 @@
 
 		Array(200).fill(0).forEach(addStar);
 
-		const spaceTexture = new THREE.TextureLoader().load('src/lib/images/space.jpeg');
+		const spaceTexture = new THREE.TextureLoader().load('src/lib/assets/space.jpeg');
 
 		scene.background = spaceTexture;
 
 		animate();
 
-		const teganTexture = new THREE.TextureLoader().load('src/lib/images/profile-pic2.jpg');
+		const teganTexture = new THREE.TextureLoader().load('src/lib/assets/profile-pic2.jpg');
 		tegan = new THREE.Mesh(
 			new THREE.BoxGeometry(3, 3, 3),
 			new THREE.MeshBasicMaterial({ map: teganTexture })
 		);
 		scene.add(tegan);
 
-		const moonTexture = new THREE.TextureLoader().load('src/lib/images/moon.jpg');
-		const normalTexture = new THREE.TextureLoader().load('src/lib/images/normal.jpg');
+		const moonTexture = new THREE.TextureLoader().load('src/lib/assets/moon.jpg');
+		const normalTexture = new THREE.TextureLoader().load('src/lib/assets/normal.jpg');
 		moon = new THREE.Mesh(
 			new THREE.SphereGeometry(3, 32, 32),
 			new THREE.MeshStandardMaterial({ map: moonTexture, normalMap: normalTexture })

@@ -66,7 +66,7 @@
 		const normalTexture = new THREE.TextureLoader().load('src/lib/images/normal.jpg');
 		moon = new THREE.Mesh(
 			new THREE.SphereGeometry(3, 32, 32),
-			new THREE.MeshBasicMaterial({ map: moonTexture })
+			new THREE.MeshStandardMaterial({ map: moonTexture, normalMap: normalTexture })
 		);
 		moon.position.z = 30;
 		moon.position.x = -10;

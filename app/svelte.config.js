@@ -16,7 +16,7 @@ const config = {
 			'$ws-abis': './src/abis'
 		},
 		files: {
-			assets: 'src/assets'
+			assets: 'src/lib/assets'
 		}
 	}
 };

@@ -5,12 +5,17 @@
 		{
 			title: 'TuneWrangler',
 			link: 'https://github.com/tseitz/TuneWrangler',
-			description: 'Application to wrangle my tunes'
+			description: 'Deno app that wrangles my tunes'
 		},
 		{
 			title: 'Crypto Trading Bot',
 			link: 'https://github.com/tseitz/crypto',
-			description: 'My crypto alerts and trading bot'
+			description: 'Crypto alerts and trading bot'
+		},
+		{
+			title: 'Spotify Smart Playlist',
+			link: 'https://github.com/tseitz/spotify-smart-playlists',
+			description: 'Turns any Spotify playlist into a smart playlist'
 		},
 		{
 			title: 'Sports Betting Foundry',
@@ -19,19 +24,14 @@
 				'Play app for betting my family in football. Built with Sveltekit, Thales and Foundry toolkit'
 		},
 		{
-			title: 'Spotify Smart Playlist',
-			link: 'https://github.com/tseitz/spotify-smart-playlists',
-			description: 'Turns any Spotify playlist into a smart playlist'
-		},
-		{
 			title: 't-configs',
 			link: 'https://github.com/tseitz/t-configs',
-			description: 'My config files'
+			description: 'My config files and settings'
 		},
 		{
 			title: 'Missy Midwest',
 			link: 'https://github.com/tseitz/missy-midwest',
-			description: "Missy Midwest's Website"
+			description: "Missy Midwest's Artist Website"
 		}
 	];
 </script>
@@ -62,12 +62,12 @@
 		<h2 class="text-3xl col-span-full">👩🏽‍🚀 Projects</h2>
 
 		{#each projects as project}
-			<div class="p-8 bg-slate-800 rounded-lg">
+			<a class="p-8 bg-slate-800 rounded-lg" href={project.link} target="_blank" rel="noreferrer">
 				<h3 class="text-2xl">
-					<a href={project.link} target="_blank" rel="noreferrer">{project.title}</a>
+					{project.title}
 				</h3>
 				<p>{project.description}</p>
-			</div>
+			</a>
 		{/each}
 	</section>
 

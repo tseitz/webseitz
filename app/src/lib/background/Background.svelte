@@ -12,7 +12,7 @@
 	let scene: Scene;
 	let camera: PerspectiveCamera;
 	let renderer: WebGLRenderer;
-	let torus: Mesh;
+	let torusKnot: Mesh;
 	let moon: Mesh;
 	let tegan: Mesh;
 	let h: number;
@@ -32,13 +32,24 @@
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		camera.position.z = 30;
 
-		const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
-		const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-		torus = new THREE.Mesh(geometry, material);
+		// const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+		const geometry = new THREE.TorusKnotGeometry(16, 1.6, 100, 4, 7, 8);
+		const material = new THREE.MeshLambertMaterial({
+			color: 0x3d3741,
+			// transparent: true,
+			// opacity: 0.4,
+			depthTest: true,
+			depthWrite: true,
+			visible: true
+		});
+		torusKnot = new THREE.Mesh(geometry, material);
+		// const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+		// torus = new THREE.Mesh(geometry, material);
 
-		torus.position.x = 10;
-		torus.position.z = 5;
-		scene.add(torus);
+		torusKnot.position.y = 2;
+		torusKnot.position.z = 1;
+		scene.add(torusKnot);
+		// scene.add(torus);
 
 		const pointLight = new THREE.PointLight(0xf3e7d3);
 		pointLight.position.set(20, 20, 20);
@@ -63,10 +74,12 @@
 
 		const teganTexture = new THREE.TextureLoader().load(teganImage);
 		tegan = new THREE.Mesh(
-			new THREE.BoxGeometry(3, 3, 3),
+			new THREE.BoxGeometry(5, 5, 5),
 			new THREE.MeshBasicMaterial({ map: teganTexture })
 		);
-		tegan.position.x = -6;
+		tegan.position.y = 2;
+		tegan.position.z = -10;
+		// tegan.position.x = -6;
 		scene.add(tegan);
 
 		const moonTexture = new THREE.TextureLoader().load(moonImage);
@@ -84,9 +97,9 @@
 
 	function animate() {
 		requestAnimationFrame(animate);
-		torus.rotation.x += 0.01;
-		torus.rotation.y += 0.005;
-		torus.rotation.z += 0.01;
+		// torusKnot.rotation.x += 0.01;
+		// torusKnot.rotation.y += 0.01;
+		torusKnot.rotation.z += 0.005;
 		renderer.render(scene, camera);
 	}
 

@@ -1,4 +1,0 @@
-forge-std/=contracts/lib/forge-std/src/
-ds-test/=contracts/lib/solmate/lib/ds-test/src/
-solmate-utils/=contracts/lib/solmate/src/utils/
-solmate/=contracts/lib/solmate/src/

@@ -36,33 +36,34 @@
 	];
 </script>
 
-<!-- <div class="container m-12">
-  <h1 class="text-center text-3xl font-bold my-6">Tegan Seitz</h1>
-	<blockquote class="text-center text-xl italic my-6">
-		Senior developer looking to carve a purposeful path in life, and to contribute to a team that
-		provides real value and impact to the world.
-	</blockquote>
-
-</div> -->
 <Background />
 
 <main class="absolute grid grid-cols-12 w-full text-white p-24 gap-y-96">
 	<header
-		class="text-3xl flex flex-col items-center bg-slate-800 col-start-4 col-span-6 p-8 mb-8 rounded-lg"
+		class="text-3xl flex flex-col items-center text-center bg-slate-800 col-start-2 col-span-10 lg:col-start-4 lg:col-span-6 p-8 mb-8 rounded-lg"
 	>
-		<h1>Tegan Seitz</h1>
+		<h1 class="mb-4">Tegan Seitz</h1>
 		<p>Welcome to my website! 🦒🧙🏻‍♂️</p>
 	</header>
 
-	<blockquote class="text-2xl p-8 rounded-lg col-start-4 col-span-6 bg-slate-800">
-		<p>I'm a developer looking to carve a purposeful path in life</p>
+	<blockquote
+		class="text-2xl p-8 rounded-lg col-start-2 col-span-10 lg:col-start-4 lg:col-span-6 bg-slate-800"
+	>
+		<p>I'm a developer looking to carve a meaningful path in life.</p>
 	</blockquote>
 
-	<section class="col-start-2 col-span-10 grid grid-cols-3 grid-flow-row gap-6">
-		<h2 class="text-3xl col-span-full">👩🏽‍🚀 Projects</h2>
+	<section
+		class="col-start-1 col-span-11 lg:col-start-2 lg:col-span-10 grid grid-cols-2 lg:grid-cols-3 grid-flow-row gap-4 md:gap-6"
+	>
+		<h2 class="text-4xl col-span-full">👩🏽‍🚀 Projects</h2>
 
 		{#each projects as project}
-			<a class="p-8 bg-slate-800 rounded-lg" href={project.link} target="_blank" rel="noreferrer">
+			<a
+				class="p-8 bg-slate-800 rounded-lg cool-hover"
+				href={project.link}
+				target="_blank"
+				rel="noreferrer"
+			>
 				<h3 class="text-2xl">
 					{project.title}
 				</h3>
@@ -71,57 +72,80 @@
 		{/each}
 	</section>
 
-	<blockquote class="col-start-2 col-span-4 bg-slate-800 rounded-lg p-8">
-		<p>The best way out is always through <br />-Robert Frost</p>
-	</blockquote>
+	<section
+		class="col-start-1 col-span-11 lg:col-start-2 lg:col-span-10 bg-slate-800 rounded-lg p-12 md:p-16 leading-8"
+	>
+		<h2 class="text-4xl">Work History 🧑🏼‍💻</h2>
 
-	<section class="col-start-2 col-span-10 bg-slate-800 rounded-lg p-8">
-		<h2 class="text-3xl">Work History 🧑🏼‍💻</h2>
-
-		<h3 class="text-2xl mt-8 mb-2">ICON - Full Stack Developer (Apr 2018-Present)</h3>
+		<h3 class="text-3xl mt-8 mb-2">ICON - Full Stack Developer and Tech Lead (Apr 2018-Present)</h3>
 		<ul>
 			<ul class="list-disc list-outside">
-				<li>Began career learning Python and building an ETL layer for various projects</li>
-				<li>Kept up with the front-end world, self teaching React on the side.</li>
-				<li>Shifted to more of a front-end focus after ETL projects</li>
-				<li>Carried over Python knowledge to become a full stack engineer</li>
+				<li>Began position self teaching Python, building an ETL layer for various projects</li>
+				<li>Kept up with the front-end world, learning React on the side</li>
+				<li>Carried over Python knowledge to a new role becoming a full-stack developer</li>
 				<li>
-					Worked with our architect to build out a back-end infrastructure with Azure, Python for
-					data processing and Flask APIs
+					Worked with Lead Architect to create a back-end infrastructure built on Azure, Python and
+					Flask APIs
 				</li>
 				<li>
 					Promoted to the role of Technical Lead for our Clinical Data Repository (CDR) project, a
 					project to centralize Clinical Data
 				</li>
-				<li>Used technical knowledge to build out a custom front-end stack from the ground up</li>
+				<li>Built a custom front-end stack from the ground up using the latest technologies</li>
 				<li>
-					Shifted to more of a leader role, running our morning developer meetings and assisting
-					developers as necessary
+					Worked as a leader, running morning developer meetings and leading the technical vision
+					for the project
 				</li>
 				<li>
 					Designed best practices and ways of working for the project, including project Git flow,
-					documentation and other administrative tasks
+					CI/CD, Git hooks, documentation and other effective ways of work
 				</li>
 				<li>
-					More than doubled testing speed by adjusting the testing stack mid way through phase 1 of
+					More than doubled testing speed by adjusting the testing stack halfway through phase 1 of
 					the project, greatly increasing developer productivity
 				</li>
+				<li>
+					Built custom authentication system, with role based route protection and conditional
+					masking of data
+				</li>
+				<li>Integrated Microsoft SSO with internal AD, merging with existing role based system</li>
+				<li>Implemented conventional commits for automatic changelog and release notes</li>
+				<li>Led UI/UX vision for the project</li>
 			</ul>
 
-			<h3 class="text-2xl mt-8 mb-2">Se2 - Software Developer (May 2014-Mar 2018)</h3>
+			<h3 class="text-3xl mt-8 mb-2">Se2 - Software Developer (May 2014-Mar 2018)</h3>
 			<ul class="list-disc list-outside">
 				<li>
-					Sole developer of the interface’s team admin website using Angular (self taught 4+ years)
+					Started as an intern. 1 of 2 developers out of 26 that was asked to stay through final
+					year of school.
 				</li>
-				<li>Migrated system from Angular 1 to Angular 2</li>
+				<li>Sole developer of the Interface's team admin website using Angular (self taught)</li>
+				<li>
+					Took often vague requirements and created a UX around it, presenting and collaborating my
+					ideas with the team
+				</li>
+				<li>Migrated system from Angular 1 to Angular 2 (a pain)</li>
 				<li>Moved to Web Development team in 2017 to continue working with Angular and C#</li>
 				<li>
-					Worked with senior developers to redesign the web interface with the goal of creating a
-					“Unified Web” to gather and show external clients their financial data.
+					Worked with senior developers to redesign our web interface with the goal of creating a
+					“Unified Web” experience that aggregated client financial data into one place
 				</li>
 				<li>Team go-to for user experience design</li>
-				<li>Cross department recognition (web/interface work)</li>
+				<li>
+					Participated in hackathon, placing at the top. The company eventually followed through
+					with the project
+				</li>
 			</ul>
 		</ul>
 	</section>
+
+	<blockquote class="col-start-2 col-span-4 bg-slate-800 rounded-lg p-8">
+		<p>I just wanted to play around with 3D stuff</p>
+	</blockquote>
 </main>
+
+<style>
+	.cool-hover:hover {
+		transform: scale(1.02) translateY(-3px);
+	}
+</style>

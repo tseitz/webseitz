@@ -10,10 +10,3 @@ From /app
 
 `pnpm dev`
 
-To run local node
-
-`anvil`
-
-Get ABI of contract (needs updating)
-
-`forge inspect src/FlashCard.sol:FlashCard abi --extra-output-files abi > ../app/src/abis/FlashCard.json`

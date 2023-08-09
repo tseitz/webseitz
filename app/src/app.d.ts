@@ -10,8 +10,3 @@ declare namespace App {
 	// interface Platform {}
 }
 
-declare global {
-	interface Window {
-		ethereum: ExternalProvider;
-	}
-}

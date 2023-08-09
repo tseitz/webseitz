@@ -74,10 +74,10 @@
 
 		const teganTexture = new THREE.TextureLoader().load(teganImage);
 		tegan = new THREE.Mesh(
-			new THREE.BoxGeometry(5, 5, 5),
+			new THREE.BoxGeometry(6, 6, 6),
 			new THREE.MeshBasicMaterial({ map: teganTexture })
 		);
-		tegan.position.y = 2;
+		tegan.position.y = 1;
 		tegan.position.z = -10;
 		// tegan.position.x = -6;
 		scene.add(tegan);

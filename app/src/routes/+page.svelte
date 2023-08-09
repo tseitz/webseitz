@@ -40,16 +40,16 @@
 
 <main class="absolute grid grid-cols-12 w-full text-white p-24 gap-y-96">
 	<header
-		class="text-3xl flex flex-col items-center text-center bg-slate-800 col-start-2 col-span-10 lg:col-start-4 lg:col-span-6 p-8 mb-8 rounded-lg"
+		class="text-3xl flex flex-col items-center text-center bg-slate-800 col-start-2 col-span-10 xl:col-start-4 xl:col-span-6 2xl:col-start-5 2xl:col-span-4 p-6 mb-8 rounded-lg"
 	>
-		<h1 class="mb-4">Tegan Seitz</h1>
+		<h1 class="mb-4">Hi, my name is Tegan Seitz</h1>
 		<p>Welcome to my website! 🦒🧙🏻‍♂️</p>
 	</header>
 
 	<blockquote
-		class="text-2xl p-8 rounded-lg col-start-2 col-span-10 lg:col-start-4 lg:col-span-6 bg-slate-800"
+		class="text-2xl p-8 rounded-lg col-start-2 col-span-10 xl:col-start-4 xl:col-span-6 2xl:col-start-5 2xl:col-span-4 bg-slate-800"
 	>
-		<p>I'm a developer looking to carve a meaningful path in life.</p>
+		<p>I'm a developer looking to carve a purposeful path in life.</p>
 	</blockquote>
 
 	<section
@@ -64,7 +64,7 @@
 				target="_blank"
 				rel="noreferrer"
 			>
-				<h3 class="text-2xl">
+				<h3 class="text-2xl mb-3">
 					{project.title}
 				</h3>
 				<p>{project.description}</p>
@@ -77,7 +77,7 @@
 	>
 		<h2 class="text-4xl">Work History 🧑🏼‍💻</h2>
 
-		<h3 class="text-3xl mt-8 mb-2">ICON - Full Stack Developer and Tech Lead (Apr 2018-Present)</h3>
+		<h3 class="text-3xl mt-8 mb-4">ICON - Full Stack Developer and Tech Lead (Apr 2018-Present)</h3>
 		<ul>
 			<ul class="list-disc list-outside">
 				<li>Began position self teaching Python, building an ETL layer for various projects</li>
@@ -113,7 +113,7 @@
 				<li>Led UI/UX vision for the project</li>
 			</ul>
 
-			<h3 class="text-3xl mt-8 mb-2">Se2 - Software Developer (May 2014-Mar 2018)</h3>
+			<h3 class="text-3xl mt-8 mb-4">Se2 - Software Developer (May 2014-Mar 2018)</h3>
 			<ul class="list-disc list-outside">
 				<li>
 					Started as an intern. 1 of 2 developers out of 26 that was asked to stay through final
@@ -147,5 +147,6 @@
 <style>
 	.cool-hover:hover {
 		transform: scale(1.02) translateY(-3px);
+		transition-duration: 200ms;
 	}
 </style>

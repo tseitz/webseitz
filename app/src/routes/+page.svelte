@@ -140,7 +140,7 @@
 	</section>
 
 	<blockquote class="col-start-2 col-span-4 bg-slate-800 rounded-lg p-8">
-		<p>I just wanted to play around with 3D stuff</p>
+		<p>Just felt like playing around with 3D things :) thank you for checking out my site!</p>
 	</blockquote>
 </main>
 

@@ -77,32 +77,40 @@
 	>
 		<h2 class="text-4xl">Work History 🧑🏼‍💻</h2>
 
-		<h3 class="text-3xl mt-8 mb-4">ICON - Full Stack Developer and Tech Lead (Apr 2018-Present)</h3>
+		<h3 class="text-3xl mt-8 mb-2">Technical Lead / Full-stack Developer</h3>
+		<h4 class="text-lg mb-3">ICON plc: April 2018 - Present</h4>
 		<ul>
 			<ul class="list-disc list-outside">
-				<li>Began position self teaching Python, building an ETL layer for various projects</li>
-				<li>Kept up with the front-end world, learning React on the side</li>
-				<li>Carried over Python knowledge to a new role becoming a full-stack developer</li>
+				<li>Started in a Python role, developing an ETL layer for various projects</li>
+				<li>Self-taught React on the side to keep up with the front-end world</li>
+				<li>Carried over Python knowledge to a new role as a full-stack developer</li>
 				<li>
 					Worked with Lead Architect to create a back-end infrastructure built on Azure, Python and
 					Flask APIs
 				</li>
 				<li>
-					Promoted to the role of Technical Lead for our Clinical Data Repository (CDR) project, a
-					project to centralize Clinical Data
+					Promoted to Technical Lead of the Clinical Data Repository (CDR) project, a project to
+					aggregate, version and interact with Clinical Data
 				</li>
-				<li>Built a custom front-end stack from the ground up using the latest technologies</li>
+				<li>
+					Built a custom front-end stack from the ground up using the latest technologies. React,
+					React Query, Vite, BDD framework to plug into our testing
+				</li>
+				<li>
+					Was the sole developer during the POC phase of the project. Helped lay the foundation for
+					others to join
+				</li>
+				<li>
+					Designed best practices and ways of working, including project Git flow, Git hooks, CI/CD,
+					documentation and other effective standard ways of working
+				</li>
 				<li>
 					Worked as a leader, running morning developer meetings and leading the technical vision
 					for the project
 				</li>
 				<li>
-					Designed best practices and ways of working for the project, including project Git flow,
-					CI/CD, Git hooks, documentation and other effective ways of work
-				</li>
-				<li>
-					More than doubled testing speed by adjusting the testing stack halfway through phase 1 of
-					the project, greatly increasing developer productivity
+					Swapped out testing infrastructure during the project to greatly increase developer
+					productivity
 				</li>
 				<li>
 					Built custom authentication system, with role based route protection and conditional
@@ -110,14 +118,19 @@
 				</li>
 				<li>Integrated Microsoft SSO with internal AD, merging with existing role based system</li>
 				<li>Implemented conventional commits for automatic changelog and release notes</li>
-				<li>Led UI/UX vision for the project</li>
+				<li>
+					Developed a Docker container to be given to Quality Engineers and new developers so they
+					could get started right away
+				</li>
+				<li>Led UI/UX vision for the project in lieu of a designer</li>
 			</ul>
 
-			<h3 class="text-3xl mt-8 mb-4">Se2 - Software Developer (May 2014-Mar 2018)</h3>
+			<h3 class="text-3xl mt-8 mb-2">Se2 - Software Developer (May 2014-Mar 2018)</h3>
+			<h4 class="text-lg mb-3">Se2: May 2014 - March 2018</h4>
 			<ul class="list-disc list-outside">
 				<li>
 					Started as an intern. 1 of 2 developers out of 26 that was asked to stay through final
-					year of school.
+					year of school
 				</li>
 				<li>Sole developer of the Interface's team admin website using Angular (self taught)</li>
 				<li>
@@ -125,15 +138,15 @@
 					ideas with the team
 				</li>
 				<li>Migrated system from Angular 1 to Angular 2 (a pain)</li>
-				<li>Moved to Web Development team in 2017 to continue working with Angular and C#</li>
+				<li>Unified Web - 2016-2018</li>
+				<li>Moved to Web Development team to continue working with Angular and C#</li>
 				<li>
 					Worked with senior developers to redesign our web interface with the goal of creating a
 					“Unified Web” experience that aggregated client financial data into one place
 				</li>
 				<li>Team go-to for user experience design</li>
 				<li>
-					Participated in hackathon, placing at the top. The company eventually followed through
-					with the project
+					Participated in a hackathon, placing top 3. The company followed through with the project
 				</li>
 			</ul>
 		</ul>

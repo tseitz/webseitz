@@ -153,7 +153,7 @@
 	</section>
 
 	<blockquote class="col-start-2 col-span-4 bg-slate-800 rounded-lg p-8">
-		<p>Just felt like playing around with 3D things :) thank you for checking out my site!</p>
+		<p>3D things are fun :)</p>
 	</blockquote>
 </main>
 
